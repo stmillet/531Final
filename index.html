@@ -109,11 +109,11 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 
-$(window).on("load",function(){
+window.addEventListener('DOMContentLoaded', (event) => {
   $(".loader-wrapper").fadeOut("slow");
 });
 </script>
-<script src='apiCall.js'></script>
+<script src='apiCall.js' defer></script>
 
 </body>
 </html>
