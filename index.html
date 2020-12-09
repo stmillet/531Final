@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="styles.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-flex .w3-bar-item {padding:20px}
@@ -43,6 +44,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 </div> -->
   
 <!-- !PAGE CONTENT! -->
+<div class='loader-wrapper'>
+<span class="loader"><span class="loader-inner"></span></span>
+</div>
+
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
   <!-- First Photo Grid-->
@@ -90,7 +95,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
 <!-- End page content -->
 </div>
-
+<script
+  src="https://code.jquery.com/jquery-2.1.4.js"
+  integrity="sha256-siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4="
+  crossorigin="anonymous"></script>
 <script>
 // Script to open and close sidebar
 function w3_open() {
@@ -100,6 +108,10 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
+
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
 </script>
 <script src='apiCall.js'></script>
 
