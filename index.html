@@ -10,18 +10,29 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-flex .w3-bar-item {padding:20px}
 </style>
-<body>
+<body style='background-color: #ede6d8'>
 
 <!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-flex w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+<!-- <nav class="w3-sidebar w3-bar-flex w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
   class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Donuts</a>
+  <a href="#root" onclick="w3_close()" class="w3-bar-item w3-button">Donuts</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-</nav>
+</nav> -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <img src="doughnutfavicon.ico" width="40">
+    <a href="#home" class="w3-bar-item w3-button">Paradise Donuts</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+    </div>
+  </div>
+</div>
 
 <!-- Top menu -->
-<div class="w3-top">
+<!-- <div class="w3-top" style='background-color: #ede6d8'>
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
     <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
     <div class="w3-right w3-padding-16">Menu</div>
@@ -29,67 +40,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
       <img src="doughnutfavicon.ico" width="40">
       Paradise Dounuts</div>
   </div>
-</div>
+</div> -->
   
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
-      <h3>Let Me Tell You About This Steak</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
-      <h3>Cherries, interrupted</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
-      <h3>All I Need Is a Popsicle</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
-      <h3>Salmon For Your Skin</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
-      <h3>Le French</h3>
-      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
+  <h1 class='w3-center'><b>Our Menu</b></h1>
+  <hr>
+  <div id='root'>
   </div>
 
   <!-- Pagination -->
   
-  <hr id="about">
+
 
   <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>About Us</h3><br>
+  <div class="w3-container w3-padding-32 w3-center" id='about'> 
+    <hr>
+    <h1>About Us</h3><br>
     <div class='w3-quarter'>
       <img src="Pictures/spencer.jpeg" alt="Me" class="w3-image" style="display:block;margin:auto" width="283">
     </div>
@@ -105,17 +74,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   </div>
     <div class="w3-center">
       <p> </p>
-      <h4><b>Why am I not centered?</b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <h4><b>Lambda is the Future</b></h4>
+      <h6><i>It is Extremely Cheap and Very Scalable</i></h6>
+      <p>Serverless computing completely changes the game. Through the tutelage of Dr. Kettles we have learned how to dynamically change a website using AWS API Gateways and AWS Lambda. The website is hosted in a S3 bucket, and we use AWS Code Pipeline to deploy new changes. It is all very scalable as Lambda will just charge us more for the increased execution time as more people visit the site.</p>
     </div>
   <hr>
   
   <!-- Footer -->
   <footer class="w3-row-padding w3-padding-32">
     <div class="w3-center">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </div>
   
@@ -134,6 +101,7 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+<script src='apiCall.js'></script>
 
 </body>
 </html>
